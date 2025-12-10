@@ -14,7 +14,7 @@ import { FloatingOrbs } from '@/components/ui/FloatingOrbs';
 export default function Home() {
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => {   
     setMounted(true);
   }, []);
 
