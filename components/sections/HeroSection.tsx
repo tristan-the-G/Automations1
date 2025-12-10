@@ -15,6 +15,13 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ mounted }: HeroSectionProps) {
+  // 1. Erfahren, welche Sprache aktiv ist (z.B. 'de')
+  const { language } = useLanguage(); 
+  
+  // 2. Das passende Textbuch (deutsch oder englisch) abrufen
+  const texts = getTexts(language);
+
+export function HeroSection({ mounted }: HeroSectionProps) {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
   return (
