@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { getTexts } from '@/lib/translations';
 import { useState } from 'react';
@@ -13,14 +12,10 @@ import Link from 'next/link';
 
 interface HeroSectionProps {
   mounted: boolean;
-}
+} 
 
 export function HeroSection({ mounted }: HeroSectionProps) {
-  const { language } = useLanguage();
-  const texts = getTexts(language);
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
-
-
 
   return (
     <>
