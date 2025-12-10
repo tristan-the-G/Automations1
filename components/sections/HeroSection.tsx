@@ -15,11 +15,6 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ mounted }: HeroSectionProps) {
-  const { language } = useLanguage(); 
-  
-  const texts = getTexts(language);
-
-export function HeroSection({ mounted }: HeroSectionProps) {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
   return (
